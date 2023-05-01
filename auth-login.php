@@ -19,14 +19,26 @@
 	}
 
 	echo '
-		<form action="login.php" method="POST">
-			<label for="email">Email</label>
-			<input id="email" name="email" type="text" placeholder="Email">
-			<label for="password">Password</label>
-			<input id="password" name="password" type="password" placeholder="Password">
-			<button name="login" value="login">Login</button>
-		</form>
-		<p>Don\'t have an account? <a href="auth-register.php">Register!</a></p>
+        <div class="container-fluid vh-100 bg-danger row d-flex justify-content-center align-items-center" style="padding: 0; margin: 0;">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="text-bg-light px-4" style="border-radius: 1rem;">
+		                <form action="login.php" method="POST">
+                            <div class="form-outline my-4"
+		                	    <label for="email" class="form-label">Email</label>
+		                	    <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-outline mb-4"
+		                	    <label for="password" class="form-label">Password</label>
+		                	    <input id="password" name="password" type="password" placeholder="Password" class="form-control">
+                            </div>
+		                	<button name="login" value="login" class="btn btn-danger btn-block mb-4 w-100">Login</button>
+		                </form>
+		            <p class="text-center">Don\'t have an account? <a href="auth-register.php">Register!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 	';
 
 	?>

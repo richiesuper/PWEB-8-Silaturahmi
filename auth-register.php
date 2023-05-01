@@ -19,20 +19,36 @@
 	}
 
 	echo '
-		<form action="register.php" method="POST">
-			<label for="email">Email</label>
-			<input id="email" name="email" type="text" placeholder="Email">
-			<label for="username">Username</label>
-			<input id="username" name="username" type="text" placeholder="Username">
-			<label for="password">Password</label>
-			<input id="password" name="password" type="password" placeholder="Password">
-			<label for="type">Account Type</label>
-			<select id="type" name="type">
-				<option value="P">Pejabat</option>
-				<option value="R">Rakyat</option>
-			</select>
-			<button name="register" value="register">Register</button>
-		</form>
+        <div class="container-fluid vh-100 bg-danger row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="text-bg-light px-4" style="border-radius: 1rem;">
+		                <form action="register.php" method="POST">
+                            <div class="form-outline my-4"
+		                	    <label for="email" class="form-label">Email</label>
+		                	    <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-outline mb-4"
+		                	    <label for="username" class="form-label">Username</label>
+		                	    <input id="username" name="username" type="text" placeholder="Username" class="form-control">
+                            </div>
+                            <div class="form-outline mb-4"
+		                	    <label for="password" class="form-label">Password</label>
+		                	    <input id="password" name="password" type="password" placeholder="Password" class="form-control">
+                            </div>
+                            <div class="form-outline mb-4"
+		                	    <label for="type" class="form-label">Account Type</label>
+		                	    <select id="type" name="type" class="form-control">
+		                	    	<option value="P">Pejabat</option>
+		                	    	<option value="R">Rakyat</option>
+		                	    </select>
+                            </div>
+		                	<button name="register" value="register" class="btn btn-danger btn-block mb-4 w-100">Register</button>
+		                </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 	';
 
 	?>

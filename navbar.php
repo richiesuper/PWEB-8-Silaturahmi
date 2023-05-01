@@ -1,7 +1,7 @@
 <header>
-	<nav class="navbar navbar-expand-lg bg-primary">
+	<nav class="navbar navbar-expand-lg text-bg-light">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="/">Silaturahmi</a>
+			<a class="center navbar-brand" href="/PWEB-8-Silaturahmi">Silaturahmi.id</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
