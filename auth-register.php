@@ -19,7 +19,7 @@
 	}
 
 	echo '
-        <div class="container-fluid vh-100 bg-danger row d-flex justify-content-center align-items-center">
+        <div class="container-fluid vh-100 bg-danger row d-flex justify-content-center align-items-center" style="padding: 0; margin: 0;">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="text-bg-light px-4" style="border-radius: 1rem;">
