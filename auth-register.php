@@ -15,7 +15,7 @@
 	include "navbar.php";
 
 	if (isset($_GET['rstatus']) && $_GET['rstatus'] === "failed") {
-			echo "<h1>Registration failed. Please try to register again.";
+		echo "<h1 class='bg-danger text-center'>Registration failed. Please try to register again.";
 	}
 
 	echo '
