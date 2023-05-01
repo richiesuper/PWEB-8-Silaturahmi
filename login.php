@@ -8,8 +8,12 @@ if (isset($_POST['login'])) {
 	$sql = "SELECT * FROM User WHERE email = '$email' AND password = '$password';";
 	$result = mysqli_query($conn, $sql);
 	if ($result) {
-		if (mysqli_fetch_array($result)) {
+        $row = mysqli_fetch_array($result);
+		if ($row) {
 			$_SESSION['email'] = $email;
+            $_SESSION['user_id'] = $row['id'];
+            $_SESSION['username'] = $row['username'];
+            $_SESSION['type'] = $row['type'];
 			header("Location: index.php?lstatus=success");
 		} else {
 			header("Location: auth-login.php?lstatus=failed");
@@ -20,3 +24,4 @@ if (isset($_POST['login'])) {
 } else {
 	echo "<h1>Access Forbidden!</h1>";
 }
+?>

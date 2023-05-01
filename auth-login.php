@@ -36,7 +36,7 @@
                             </div>
 		                	<button name="login" value="login" class="btn btn-danger btn-block mb-4 w-100">Login</button>
 		                </form>
-		            <p class="text-center">Don\'t have an account? <a href="auth-register.php">Register!</a></p>
+		                <p class="text-center">Don\'t have an account? <a href="auth-register.php">Register!</a></p>
                     </div>
                 </div>
             </div>
