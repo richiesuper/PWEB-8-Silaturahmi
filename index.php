@@ -12,7 +12,12 @@
 </head>
 
 <body>
-	<?php include "navbar.php"; ?>
+	<?php
+	include "navbar.php";
+	if (isset($_GET['lstatus']) && $_GET['lstatus'] === "success") {
+		echo "<h1 class='bg-info text-center'>Login successful.</h1>";
+	}
+	?>
 	<main>
 		<img src="assets/img/banner.jpeg" class="w-100" alt="Banner image">
 	</main>
