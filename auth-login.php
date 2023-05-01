@@ -15,7 +15,9 @@
 	include "navbar.php";
 
 	if (isset($_GET['rstatus']) && $_GET['rstatus'] === "success") {
-		echo "<h1>Registration successful. Please login into the new account.</h1>";
+		echo "<h1 class='bg-info text-center'>Registration successful. Please login into the new account.</h1>";
+	} else if (isset($_GET['lstatus']) && $_GET['lstatus'] === "failed") {
+		echo "<h1 class='bg-danger text-center'>Login failed. Please try again.</h1>";
 	}
 
 	echo '
