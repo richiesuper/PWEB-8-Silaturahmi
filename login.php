@@ -20,5 +20,3 @@ if (isset($_POST['login'])) {
 } else {
 	echo "<h1>Access Forbidden!</h1>";
 }
-
-?>

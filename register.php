@@ -16,5 +16,3 @@ if (isset($_POST['register'])) {
 } else {
 	echo "<h1>Access Forbidden!</h1>";
 }
-
-?>
