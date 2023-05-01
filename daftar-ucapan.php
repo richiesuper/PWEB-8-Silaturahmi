@@ -58,6 +58,17 @@
             echo "</form>";
             echo "</div>";
         } else {
+            $sql2 = "SELECT * FROM Balasan WHERE pesan_id = '{$row['id']}';";
+            $result2 = mysqli_query($conn, $sql2);
+            while ($row2 = mysqli_fetch_assoc($result2)) {
+                $sql3 = "SELECT * FROM User WHERE id = '{$row2['user_id']}';";
+                $result3 = mysqli_query($conn, $sql3);
+                if ($result3) {
+                    $pembalas = mysqli_fetch_assoc($result3);
+                    echo "<h6>{$pembalas['username']} membalas:</h6>";
+                    echo "<p style=\"word-break: break-all;\">{$row2['content']}</p>";
+                }
+            }
             echo "</div>";
             echo "</form>";
             echo "</div>";
