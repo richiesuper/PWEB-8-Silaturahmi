@@ -10,7 +10,7 @@ if(isset($_POST['pesan'])) {
     $stmt->bind_param("is", $value1, $value2);
     
     if ($stmt->execute()) {
-      echo "New record created successfully";
+      header("Location: daftar-ucapan.php");
     } else {
         die("Error: " . $stmt->error);
     }
