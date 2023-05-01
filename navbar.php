@@ -11,7 +11,7 @@
 						<a class="nav-link" aria-current="page" href="daftar-ucapan.php">Daftar Ucapan</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="auth.php"><?php session_start(); echo (!isset($_SESSION['email'])) ? "Login" : "Logout"; ?></a>
+						<a class="nav-link" href="auth.php"><?php echo (!isset($_SESSION['email'])) ? "Login" : "Logout"; ?></a>
 					</li>
 				</ul>
 			</div>
