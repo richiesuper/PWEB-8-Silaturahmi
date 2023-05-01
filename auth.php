@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +15,7 @@
 	
 	if (isset($_SESSION['email'])) {
 		unset($_SESSION['email']);
-		header("Location: index.html");
+		header("Location: index.php");
 	} else {
 		header("Location: auth-login.php");
 	}
