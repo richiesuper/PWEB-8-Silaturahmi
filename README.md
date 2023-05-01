@@ -1,4 +1,4 @@
-# PWEB-7-CRUD
+# PWEB-8-Silaturahmi
 
 Repository ini menampung tugas kedelapan mata kuliah pemrograman web yang berupa
 website CRUD yang bertemakan silaturahmi. User dapat menuliskan serta membaca
