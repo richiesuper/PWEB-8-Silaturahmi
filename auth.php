@@ -15,6 +15,9 @@
 
 	if (isset($_SESSION['email'])) {
 		unset($_SESSION['email']);
+		unset($_SESSION['user_id']);
+		unset($_SESSION['username']);
+		unset($_SESSION['type']);
 		header("Location: index.php");
 	} else {
 		header("Location: auth-login.php");
